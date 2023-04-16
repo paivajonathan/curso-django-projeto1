@@ -3,9 +3,4 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request=request, template_name='recipes/home.html', context={
-        'name': {
-            'firstname': 'Jonathan',
-            'lastname': 'Paiva'
-        }
-    })
+    return render(request=request, template_name='recipes/pages/home.html')
