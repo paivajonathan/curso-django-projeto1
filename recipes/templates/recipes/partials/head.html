@@ -84,7 +84,7 @@
         .container {
             max-width: 144rem;
             margin: 0 auto;
-            padding: var(--spacing-gutter-medium)
+            padding: var(--spacing-gutter-medium);
         }
 
         .main-header-container {
@@ -109,6 +109,51 @@
 
         .main-logo-icon {
             margin-right: 1rem;
+        }
+
+        .search-form {
+            max-width: 64rem;
+
+            margin: 0 auto;
+            border: .2rem solid var(--color-primary-dark);
+            border-radius: .4rem;
+
+            display: flex;
+
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-form:focus-within {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 .5rem var(--color-primary);
+
+            background-color: var(--color-white);
+        }
+
+        .search-form:focus-within > .search-button {
+            color: var(--color-primary);
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            padding: 1rem;
+
+            background: none;
+
+            outline: none;
+
+            transition: all 300ms ease-in-out;
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: .3rem;
+        }
+
+        .search-button:focus {
+            background-color: rgba(0, 0, 0, .1);
+            outline: .1rem solid var(--color-primary);
         }
     </style>
 </head>
